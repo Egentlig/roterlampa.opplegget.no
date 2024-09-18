@@ -103,7 +103,7 @@
             // what's left is seconds
             var seconds = Math.floor(delta % 60);  // in theory the modulus is not required
 
-            timerText.innerText = `Lamp has been the wrong way for ${months} month${months !== 1 ? "s" : ""}, ${days} day${days !== 1 ? "s" : ""}, ${hours} hour${hours !== 1 ? "s" : ""}, ${minutes} minute${minutes !== 1 ? "s" : ""} og ${seconds} second${seconds !== 1 ? "s" : ""}`;
+            timerText.innerText = `Lamp has been the wrong way for ${months} month${months !== 1 ? "s" : ""}, ${days} day${days !== 1 ? "s" : ""}, ${hours} hour${hours !== 1 ? "s" : ""}, ${minutes} minute${minutes !== 1 ? "s" : ""} and ${seconds} second${seconds !== 1 ? "s" : ""}`;
             timerWrapper.classList.remove("hide");
         }, 1000);
     });
